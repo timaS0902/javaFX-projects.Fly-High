@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #190E4F;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.flyhigh.ContactsController">
+    <children>
+        <Label layoutX="37.0" layoutY="10.0" prefHeight="46.0" prefWidth="117.0" text="FLY HIGH" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="Berlin Sans FB" size="26.0" />
+            </font>
+        </Label>
+        <AnchorPane layoutY="69.0" prefHeight="330.0" prefWidth="269.0" style="-fx-background-color: #075ec8;">
+         <children>
+            <Button fx:id="backHomebtn" layoutX="24.0" layoutY="275.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="59.0" text="Back">
+               <font>
+                  <Font name="Calibri" size="15.0" />
+               </font>
+            </Button>
+            <Text fill="WHITE" layoutX="77.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contacts" wrappingWidth="97.60001220703128">
+               <font>
+                  <Font name="Bodoni MT Black" size="22.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="24.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Web page:" wrappingWidth="82.40000000000003">
+               <font>
+                  <Font name="Century" size="16.0" />
+               </font>
+            </Text>
+            <Hyperlink fx:id="webpagelink" layoutX="100.0" layoutY="130.0" onMouseDragEntered="#initialize" prefHeight="28.0" prefWidth="148.0" text="www.fly-high.com" textFill="WHITE" visited="true">
+               <font>
+                  <Font name="Calibri" size="16.0" />
+               </font>
+            </Hyperlink>
+            <Text fill="WHITE" layoutX="24.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email: flyhigh@gmail.com&#10;Number: +998971234567" wrappingWidth="203.19994506835945">
+               <font>
+                  <Font name="Century" size="16.0" />
+               </font>
+            </Text>
+         </children>
+        </AnchorPane>
+      <AnchorPane layoutX="269.0" layoutY="69.0" prefHeight="330.0" prefWidth="432.0" style="-fx-background-color: #eee;">
+         <children>
+            <Text fill="#383838" layoutX="141.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contacts us">
+               <font>
+                  <Font name="Bodoni MT Black" size="26.0" />
+               </font>
+            </Text>
+            <TextField fx:id="nameContact" layoutX="86.0" layoutY="64.0" prefHeight="34.0" prefWidth="258.0" promptText="Your Name" style="-fx-background-color: #ffffff;">
+               <font>
+                  <Font name="Calibri" size="15.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="emailContact" layoutX="86.0" layoutY="125.0" prefHeight="34.0" prefWidth="258.0" promptText="Your Email" style="-fx-background-color: #ffffff;">
+               <font>
+                  <Font name="Calibri" size="15.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="messageContact" alignment="TOP_LEFT" layoutX="86.0" layoutY="183.0" prefHeight="68.0" prefWidth="258.0" promptText="Your Message" style="-fx-background-color: #ffffff;">
+               <font>
+                  <Font name="Calibri" size="15.0" />
+               </font>
+            </TextField>
+            <Button fx:id="submitbtn" layoutX="179.0" layoutY="270.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="74.0" text="Submit">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>
